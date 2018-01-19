@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <VersionPrefix>1.2.0</VersionPrefix>
+    <VersionPrefix>1.3.0</VersionPrefix>
     <TargetFrameworks>netstandard1.3;netstandard2.0;net20;net45</TargetFrameworks>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <AssemblyName>Crc32.NET</AssemblyName>
@@ -11,8 +11,13 @@
     <PackageId>Crc32.NET</PackageId>
     <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.3' ">1.6.1</NetStandardImplicitPackageVersion>
     <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard2.0' ">2.0.0</NetStandardImplicitPackageVersion>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <RootNamespace>Force.Crc32</RootNamespace>
+    <AssemblyVersion>1.0.0.0</AssemblyVersion>
+    <Title>Crc32.NET</Title>
+    <Description>Fast Crc32 Library for .NET</Description>
+    <Company>Force</Company>
+    <Product>Crc32.NET</Product>
+    <Copyright>Copyright © Force 2016-2017</Copyright>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'BuildCore' ">
     <DelaySign>true</DelaySign>
