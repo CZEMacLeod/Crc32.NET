@@ -6,3 +6,5 @@ packages
 .tools
 private.snk
 .idea
+/.vs
+/Crc32.NET.Core.sln.startup.json

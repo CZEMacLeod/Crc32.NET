@@ -33,6 +33,9 @@
     <PackageReference Include="CRC32C.Standard" Version="1.0.0" />
     <PackageReference Include="NUnit" Version="3.6.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp1.0' ">
     <DefineConstants>$(DefineConstants);NETCORE;;NETCORE13</DefineConstants>
   </PropertyGroup>

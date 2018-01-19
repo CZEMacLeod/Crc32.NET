@@ -38,7 +38,7 @@ namespace Force.Crc32.Tests
 		{
 			Calculate(new Dexiom_Quick_Crc32());
 		}
-	
+
 		[Test]
 		public void ThroughputCrc32C_Crc32C()
 		{
@@ -51,7 +51,7 @@ namespace Force.Crc32.Tests
 			Calculate(new Crc32C_Standard());
 		}
 #endif
-	
+
 		[Test]
 		public void ThroughputCrc32_By_Me()
 		{
