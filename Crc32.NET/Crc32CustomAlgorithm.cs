@@ -10,7 +10,7 @@ namespace Force.Crc32
     /// <remarks>
     /// Uses Settings.CRC32C to get Castagnoli poly and check values
     /// </remarks>
-    public class Crc32CustomAlgorithm : Crc32AlgorithmBase<Settings.Custom>
+    public class Crc32CustomAlgorithm : Crc32AlgorithmBase
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Crc32CustomAlgorithm"/> class with the <paramref name="settings"/> provided. 

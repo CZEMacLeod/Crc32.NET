@@ -13,7 +13,7 @@
     <ProjectReference Include="..\Crc32.NET\Crc32.NET.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.0.0-preview-20170106-08" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.5.0" />
     <PackageReference Include="CRC32C.Standard" Version="1.0.0" />
     <PackageReference Include="NUnit" Version="3.9.0" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.9.0" />
@@ -31,7 +31,7 @@
     <PackageReference Include="System.Data.HashFunction.CRC" Version="1.8.2.2" />
     <PackageReference Include="System.Data.HashFunction.Interfaces" Version="1.0.0.2" />
     <PackageReference Include="CRC32C.Standard" Version="1.0.0" />
-    <PackageReference Include="NUnit" Version="3.6.0" />
+    <PackageReference Include="NUnit" Version="3.9.0" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />

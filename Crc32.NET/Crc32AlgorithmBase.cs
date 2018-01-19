@@ -7,15 +7,12 @@ namespace Force.Crc32
     /// Implementation of CRC-32.
     /// This class supports several convenient static methods returning the CRC as UInt32.
     /// </summary>
-    /// <typeparam name="TSetting">Settings to use for CRC-32 calculation</typeparam>
-    public abstract class Crc32AlgorithmBase<TSetting> : HashAlgorithm
-        where TSetting : Force.Crc32.Settings.Base
+    public abstract class Crc32AlgorithmBase : HashAlgorithm
     {
         private uint _currentCrc;
 
         private readonly bool _isBigEndian = true;
-
-#pragma warning disable RECS0108 // Warns about static fields in generic types
+        
         private Settings.Base _settings;
         internal SafeProxy _proxy;
 
@@ -31,11 +28,9 @@ namespace Force.Crc32
             set
             { _settings = value; _proxy = new SafeProxy(_settings.Poly); }
         }
-
-#pragma warning restore RECS0108 // Warns about static fields in generic types
-
+        
         /// <summary>
-        /// Initializes a new instance of the <see cref="Crc32AlgorithmBase&lt;TSetting&gt;"/> class. 
+        /// Initializes a new instance of the <see cref="Crc32AlgorithmBase"/> class. 
         /// </summary>
         internal Crc32AlgorithmBase()
         {
@@ -45,7 +40,7 @@ namespace Force.Crc32
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Crc32AlgorithmBase&lt;TSetting&gt;"/> class. 
+        /// Initializes a new instance of the <see cref="Crc32AlgorithmBase"/> class. 
         /// </summary>
         /// <param name="isBigEndian">Should return bytes result as big endian or little endian</param>
         /// <remarks>Crc32 by dariogriffo uses big endian, so, we need to be compatible and return big endian as default</remarks>

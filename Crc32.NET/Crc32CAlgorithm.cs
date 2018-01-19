@@ -13,10 +13,10 @@ namespace Force.Crc32
     public class Crc32CAlgorithm : Crc32Algorithm<Settings.Crc32C>
     {
         // Used for static methods for backwards compatibility
-        private static readonly Crc32Algorithm<Settings.Default> _instance;
+        private static readonly Crc32Algorithm<Settings.Crc32C> _instance;
         static Crc32CAlgorithm()
         {
-            _instance = new Crc32Algorithm<Settings.Default>();
+            _instance = new Crc32Algorithm<Settings.Crc32C>();
         }
 
         /// <summary>

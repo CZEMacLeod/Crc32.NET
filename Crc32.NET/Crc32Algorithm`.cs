@@ -8,7 +8,7 @@ namespace Force.Crc32
     /// This class supports several convenient static methods returning the CRC as UInt32.
     /// </summary>
     /// <typeparam name="TSetting">Settings to use for CRC-32 calculation</typeparam>
-    public class Crc32Algorithm<TSetting> : Crc32AlgorithmBase<TSetting>
+    public class Crc32Algorithm<TSetting> : Crc32AlgorithmBase
         where TSetting : Force.Crc32.Settings.Base, new()
     {
         /// <inheritdoc />
