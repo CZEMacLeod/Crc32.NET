@@ -10,7 +10,7 @@
     <PublicSign Condition=" '$(OS)' != 'Windows_NT' ">true</PublicSign-->
     <PackageId>Crc32.NET</PackageId>
     <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard1.3' ">1.6.1</NetStandardImplicitPackageVersion>
-    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard2.0' ">2.0.0</NetStandardImplicitPackageVersion>
+    <NetStandardImplicitPackageVersion Condition=" '$(TargetFramework)' == 'netstandard2.0' ">2.0.1</NetStandardImplicitPackageVersion>
     <RootNamespace>Force.Crc32</RootNamespace>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <Title>Crc32.NET</Title>
